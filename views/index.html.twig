@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+    <title>Word Search</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="jumbotron">Word Search</h1>
+      <h4>Enter a word and a phrase, and see how many times your word occurs in the phrase you enter. Feel free to copy and paste a long novel and see how many times a certain word appears!</h4><br>
+      <form method="get" action="/output">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="input_word">Your Word:</label>
+              <input type="text" name="input_word" class="form-control" required><br>
+            </div>
+
+            <div class="form-group">
+              <label for="input_phrase">Your Phrase:</label>
+              <textarea id="phrase" name="input_phrase" class="form-control" required></textarea><br>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </div>
+      </form>
+  </body>
+</html>

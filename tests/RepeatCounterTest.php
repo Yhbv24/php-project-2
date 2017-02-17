@@ -7,8 +7,8 @@
         {
             // Arrange
             $test_getCountLetter = new RepeatCounter;
-            $input_word = "bring";
-            $input_phrase = "i want to bring a baseball";
+            $input_word = "i";
+            $input_phrase = "I";
 
             // Act
             $result = $test_getCountLetter->CountRepeats($input_word, $input_phrase);
