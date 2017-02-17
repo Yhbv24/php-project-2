@@ -1,7 +1,7 @@
 <?php
     require_once "src/RepeatCounter.php";
 
-    class RepeatCounterTest expands PHPUnit_Framework_TestCase
+    class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
         function test_getCount_letter()
         {
