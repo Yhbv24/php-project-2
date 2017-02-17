@@ -22,6 +22,7 @@ The goal of this project is to create a web app that will count the frequency of
 | 3: User enters a word, and the app will output the number of times that the word will occur | "hey" | "hey hey hey" | 3 |
 | 4: Form will require input from user | "" | "" | Form will ask user to fill out required fields |
 | 5: Program is case insensitive | "how" | "hello, HOW are you?" | 1 |
+| 6: Program takes punctuation into account | "hey" | "hey, how are you?" | 1 |
 
 ## Setup instructions
 
