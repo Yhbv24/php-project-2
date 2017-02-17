@@ -30,8 +30,12 @@
             // $input_phrase = str_split($input_phrase); // Breaks $input_phrase into an array of characters
             $matches = 0;
 
-            if (strpos(strtoupper($input_phrase), strtoupper($input_word)) !== false) {
-                $matches += 1;
+            $input_phrase = explode(" ", $input_phrase);
+
+            foreach ($input_phrase as $word_match) {
+                if ($word_match == $input_word) {
+                    $matches += 1;
+                }
             }
 
             // foreach($input_phrase as $word_check) {
