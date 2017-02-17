@@ -7,10 +7,11 @@
         {
             // Arrange
             $test_getCountLetter = new RepeatCounter;
-            $input = "b";
+            $input_word = "b";
+            $input_phrase = "a big bad bald bear";
 
             // Act
-            $result = $test_getCountLetter->CountRepeats($input);
+            $result = $test_getCountLetter->CountRepeats($input_word, $input_phrase);
 
             // Assert
             $this->assertEquals(4, $result);

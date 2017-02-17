@@ -24,9 +24,21 @@
             return $this->input_phrase;
         }
 
-        function CountRepeats()
+        function CountRepeats($input_word, $input_phrase)
         {
-            
+            $input_word = str_split($input_word); // Breaks $input_word into an array of characters
+            $input_phrase = str_split($input_phrase); // Breaks $input_phrase into an array of characters
+            $matches = 0;
+
+            foreach($input_phrase as $word_check) {
+                foreach($input_word as $letter) {
+                    if ($word_check == $letter) {
+                        $matches += 1;
+                    }
+                }
+            }
+
+            return $matches;
         }
     }
 ?>
