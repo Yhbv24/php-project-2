@@ -7,14 +7,14 @@
         {
             // Arrange
             $test_getCountLetter = new RepeatCounter;
-            $input_word = "hey";
-            $input_phrase = "hey hey hey hey";
+            $input_word = "bring";
+            $input_phrase = "i want to bring a baseball";
 
             // Act
             $result = $test_getCountLetter->CountRepeats($input_word, $input_phrase);
 
             // Assert
-            $this->assertEquals(4, $result);
+            $this->assertEquals(1, $result);
         }
     }
 ?>

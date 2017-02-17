@@ -26,25 +26,14 @@
 
         function CountRepeats($input_word, $input_phrase)
         {
-            // $input_word = str_split($input_word); // Breaks $input_word into an array of characters
-            // $input_phrase = str_split($input_phrase); // Breaks $input_phrase into an array of characters
             $matches = 0;
+            $input_phrase_words = explode(" ", $input_phrase);
 
-            $input_phrase = explode(" ", $input_phrase);
-
-            foreach ($input_phrase as $word_match) {
-                if ($word_match == $input_word) {
-                    $matches += 1;
+            foreach ($input_phrase_words as $word_matches) {
+                if ($input_word === $word_matches) {
+                    $matches +=1 ;
                 }
             }
-
-            // foreach($input_phrase as $word_check) {
-            //     foreach($input_word as $letter) {
-            //         if ($word_check == $letter) {
-            //             $matches +=1;
-            //         }
-            //     }
-            // }
 
             return $matches;
         }
