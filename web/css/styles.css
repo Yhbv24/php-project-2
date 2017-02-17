@@ -5,6 +5,10 @@ body {
   font-family: 'Old Standard TT', serif;
 }
 
+h4 {
+  line-height: 1.4em;
+}
+
 .jumbotron {
   height: 175px;
   font-size: 6em;
