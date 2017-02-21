@@ -30,10 +30,10 @@
             $input_phrase_words = explode(" ", $input_phrase); // Turns inputed phrase into array of seperate strings
 
             foreach ($input_phrase_words as $word_matches) {
-                $word_matches = trim($word_matches, ",.?!\"$#%^&*():;{}[]"); // Removes any characters from each string before testing
+                $word_matches = trim($word_matches, "-@,.?!\"$#%/\^&*():;{}[]"); // Removes any characters from each string before testing
 
-                if (strtoupper($input_word) === strtoupper($word_matches)) {
-                    $matches += 1 ;
+                if (strtoupper($input_word) === strtoupper($word_matches)) { // If word matches a word in the phrase, add one to the counter
+                    $matches += 1;
                 }
             }
 
